@@ -1,0 +1,16 @@
+{
+    "name": "php/patrones",
+    "description": "Repo de php con ejemplos de patrones",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Php\\Patrones\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ignacio Jauregui"
+        }
+    ],
+    "require": {}
+}
