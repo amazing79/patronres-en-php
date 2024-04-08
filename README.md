@@ -5,3 +5,4 @@ La idea es ir actualizando con ejemplos de patrones encontrados y adaptados (o r
 **Listado de patrones**
 
 - Patron Composite
+- Patron Command
