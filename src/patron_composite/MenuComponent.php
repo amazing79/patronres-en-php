@@ -1,5 +1,7 @@
 <?php
 
+namespace Php\Patrones\patron_composite;
+
 abstract class MenuComponent{
 
     public function getName(){
@@ -34,4 +36,3 @@ abstract class MenuComponent{
         throw new Exception('Metodo no implementado');
     }
 }
-?>

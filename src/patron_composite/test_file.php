@@ -8,8 +8,9 @@
 <body>
 <?php
 
-require_once('MenuItem.php');
-require_once('Menu.php');
+use Php\Patrones\patron_composite\Menu;
+use Php\Patrones\patron_composite\MenuItem;
+
 
 $breakfastMenu = new Menu('Super Menu', 'Puerto Mitre');
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once('MenuComponent.php');
+namespace Php\Patrones\patron_composite;
 
 class MenuItem extends MenuComponent {
     private $p_name ;
@@ -45,5 +45,4 @@ class MenuItem extends MenuComponent {
         return $this->getPrice();
     }
 
-};
-?>
+}

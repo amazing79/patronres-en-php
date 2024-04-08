@@ -1,6 +1,7 @@
 <?php
+namespace Php\Patrones\patron_composite;
 
-require_once('MenuComponent.php');
+use ArrayObject;
 
 class Menu extends MenuComponent {
     private $p_listMenu;
