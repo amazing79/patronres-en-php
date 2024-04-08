@@ -2,32 +2,38 @@
 
 namespace Php\Patrones\patron_composite;
 
-class MenuItem extends MenuComponent {
+class MenuItem extends MenuComponent
+{
     private $p_name ;
     private $p_price;
     private $p_description;
     private $p_isVegan;
 
-    public function __construct($name, $description, $price, $vegan=false){
+    public function __construct($name, $description, $price, $vegan=false)
+    {
         $this->p_name = $name;
         $this->p_description = $description;
         $this->p_price = $price;
         $this->p_isVegan = $vegan;
     }
 
-    public function getName(){
+    public function getName()
+    {
         return $this->p_name;
     }
 
-    public function getDescription(){
+    public function getDescription()
+    {
         return $this->p_description;
     }
 
-    public function getPrice(){
+    public function getPrice()
+    {
         return $this->p_price;
     }
 
-    public function isVegetarian(){
+    public function isVegetarian()
+    {
         return $this->p_isVegan;
     }
 
@@ -41,7 +47,8 @@ class MenuItem extends MenuComponent {
         return $menu;
     }
 
-    public function getCost(){
+    public function getCost()
+    {
         return $this->getPrice();
     }
 

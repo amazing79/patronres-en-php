@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-
+require_once (__DIR__ . '/../../vendor/autoload.php');
 use Php\Patrones\patron_composite\Menu;
 use Php\Patrones\patron_composite\MenuItem;
 
