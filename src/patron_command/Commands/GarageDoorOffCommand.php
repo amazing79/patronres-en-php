@@ -5,7 +5,7 @@ namespace Php\Patrones\patron_command\Commands;
 use Php\Patrones\patron_command\Devices\GarageDoor;
 use Php\Patrones\patron_command\ICommand;
 
-class GarageDoorOpenCommand implements ICommand
+class GarageDoorOffCommand implements ICommand
 {
     private GarageDoor $garageDoor;
 
@@ -20,7 +20,7 @@ class GarageDoorOpenCommand implements ICommand
 
     public function execute()
     {
-        $this->garageDoor->lightOn();
-        $this->garageDoor->up();
+        $this->garageDoor->lightOff();
+        $this->garageDoor->down();
     }
 }

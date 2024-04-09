@@ -11,21 +11,21 @@ class GarageDoor
 
     public function down()
     {
-        echo "GarageDoor Down";
+        echo "<p>GarageDoor Down</p>";
     }
 
     public function stop()
     {
-        echo "GarageDoor Stop";
+        echo "<p>GarageDoor Stop</p>";
     }
 
     public function lightOn()
     {
-        echo "GarageDoor LightOn";
+        echo "<p>GarageDoor LightOn</p>";
     }
 
     public function lightOff()
     {
-        echo "GarageDoor LightOff";
+        echo "<p>GarageDoor LightOff</p>";
     }
 }
