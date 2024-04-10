@@ -24,7 +24,7 @@ class Suspendida implements \Php\Patrones\patron_state\practica\ILavadora
 
     public function apagar()
     {
-        echo "<p>No se puede apagar!</p>";
+        echo "<p>No se puede apagar lo que no esta encendido!</p>";
     }
 
     public function suspender()

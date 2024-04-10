@@ -19,6 +19,9 @@ $lavadora->apagar();
 $lavadora->encender();
 $lavadora->encender();
 $lavadora->suspender();
+$lavadora->suspender();
+$lavadora->apagar();
+$lavadora->encender();
 $lavadora->apagar();
 
 ?>

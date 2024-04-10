@@ -6,3 +6,4 @@ La idea es ir actualizando con ejemplos de patrones encontrados y adaptados (o r
 
 - Patron Composite
 - Patron Command
+- Patron State
