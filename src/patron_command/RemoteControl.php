@@ -7,8 +7,8 @@ use Php\Patrones\patron_command\Commands\NoCommand;
 class RemoteControl
 {
     const TOTAL_DEVICES = 7;
-    private $commandsOn;
-    private $commandsOff;
+    private array $commandsOn;
+    private array $commandsOff;
 
     public function __construct()
     {

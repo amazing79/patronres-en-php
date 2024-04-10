@@ -6,7 +6,7 @@ use Php\Patrones\patron_command\ICommand;
 
 class MacroCommand implements ICommand
 {
-    private $commands;
+    private array $commands;
 
     /**
      * @param array $commands
