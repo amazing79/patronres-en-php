@@ -2,7 +2,6 @@
 
 namespace Php\Patrones\patron_observer\DataProviders;
 
-use Php\Patrones\patron_observer\Observer;
 use Php\Patrones\patron_observer\Subject;
 
 class Observable implements Subject

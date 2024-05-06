@@ -3,10 +3,9 @@
 namespace Php\Patrones\patron_observer\Displays;
 
 use Php\Patrones\patron_observer\DataProviders\Observable;
+use Php\Patrones\patron_observer\DataProviders\Observer;
 use Php\Patrones\patron_observer\DataProviders\WeatherData;
 use Php\Patrones\patron_observer\Display;
-use Php\Patrones\patron_observer\Observer;
-use Php\Patrones\patron_observer\Subject;
 
 class HeatIndexDisplay implements Observer, Display
 {
