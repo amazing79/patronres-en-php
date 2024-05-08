@@ -22,7 +22,8 @@ Contra: es más acoplado y estamos diseñando para clases concretas en vez de ab
 
 Para el caso de interfaces, la ventaja es que hay menos acoplamiento. Pero tenemos otra contra, al tener este desacople, 
 nuestra interfaz Observer en el método update tiene que saber qué parámetros va a recibir para pasarle a los observadores
-y puede que no necesiten todos. Se podría mejorar con crear distintas interfaces de observadores. 
+y puede que no necesiten todos. Se podría mejorar con crear distintas interfaces de observadores. Notar que en libro empieza
+desarrollando el patron usando interfaces y luego lo modifica extendiendo las clases de Java
 
 Se muestran ambas aunque el caso de la versión con clases esta pensada para lenguajes que tienen su propia version del patron
 observer.
