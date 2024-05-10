@@ -15,4 +15,9 @@ class DarkRoast extends Beverage
     {
         return .99;
     }
+
+    function getDescription(): string
+    {
+        return $this->description;
+    }
 }

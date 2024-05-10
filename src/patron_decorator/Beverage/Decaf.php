@@ -15,4 +15,9 @@ class Decaf extends Beverage
     {
         return 1.05;
     }
+
+    function getDescription(): string
+    {
+        return $this->description;
+    }
 }

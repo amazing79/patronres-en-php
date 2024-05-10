@@ -9,10 +9,7 @@ abstract class Beverage
     /**
      * @return mixed
      */
-    public function getDescription()
-    {
-        return $this->description;
-    }
+    abstract public function getDescription();
 
     abstract public function cost();
 

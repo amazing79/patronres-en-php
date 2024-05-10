@@ -6,5 +6,5 @@ use Php\Patrones\patron_decorator\Beverage\Beverage;
 
 abstract class CondimentDecorator extends Beverage
 {
-
+    abstract function getDescription();
 }

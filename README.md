@@ -9,6 +9,7 @@ son ejemplos del libro "Head First Design Patterns" cuyos ejemplos son realizado
 - Patron Command
 - Patron Observer
 - Patron State
+- Patron Decorator
 
 Algunas aclaraciones
 
@@ -32,3 +33,20 @@ Patron state
 
 Se muestran 2 ejemplos. Uno que se muestra en las clases prácticas de la asignatura. El otro hace referencia al ejemplo del 
 libro. 
+
+Patron Decorator
+
+En el ejemplo del libro, al momento de definir la clase CondimentDecorator (la cual extiende de Beverage), sobreescribe el
+método "getDescription" para que sea abstracta. Esto lo hace para obligar a las subclases del decorador a redefinir este 
+método. En el caso de php, no permite hacer un método abstracto si el método sobreescrito no es abstracto. 
+
+Para solucionar esto, fue necesario declarar dicho método como abstracto en la clase Beverage (y asi redefinirlo como abstracto
+en la clase decorator, lo cual no aporta nada y se puede omitir). Ahora, con estos cambios, tenemos a Beverage como una clase 
+abstracta con todos sus métodos abstractos, lo cual no tiene mucho sentido y se puede reemplazar por una interfaz. 
+
+¿Por qué lo dejamos de esta manera? Más que nada para ser lo más fiel a la versión del libro y aclarando que las subclases
+de decorator deben sobreescribir este método (Nota: se dejó a propósito, ya que se puede omitir y, aun así, sigue siendo 
+abstracto por lo cual se debe implementar por las subclases de este). Al analizar la herencia de esta manera, vemos que la
+versión del método abstracto qué implementados es de la clase Decorador, en cambio, el método "cost" estamos implementando 
+la versión de la clase Beverage. Nuevamente, se aclara que se puede realizar sin necesidad de hacer este método "getDescription"
+abstracto, recordando sobreescribirlo en todos los condimentos y es parte del uso de este patron.

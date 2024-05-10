@@ -14,4 +14,9 @@ class HouseBlend extends Beverage
     {
         return .89;
     }
+
+    function getDescription(): string
+    {
+        return $this->description;
+    }
 }
