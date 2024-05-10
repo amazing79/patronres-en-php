@@ -3,7 +3,6 @@
 namespace Php\Patrones\patron_decorator\Condiments;
 
 use Php\Patrones\patron_decorator\Beverage\Beverage;
-use Php\Patrones\patron_decorator\Condiments\CondimentDecorator;
 
 class Mocha extends CondimentDecorator
 {
@@ -24,7 +23,7 @@ class Mocha extends CondimentDecorator
         return $this->beverage->cost() + .20;
     }
 
-    public function description(): string
+    public function getDescription(): string
     {
         return $this->beverage->getDescription() . ", Mocha";
     }

@@ -22,7 +22,7 @@ class Soy extends CondimentDecorator
         return $this->beverage->cost() + .10;
     }
 
-    public function description(): string
+    public function getDescription(): string
     {
         return $this->beverage->getDescription() . ", Soy";
     }
