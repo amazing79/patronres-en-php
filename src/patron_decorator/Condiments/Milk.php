@@ -13,7 +13,6 @@ class Milk extends CondimentDecorator
      */
     public function __construct(Beverage $beverage)
     {
-        parent::__construct("");
         $this->beverage = $beverage;
     }
 

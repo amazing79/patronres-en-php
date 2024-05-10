@@ -7,7 +7,7 @@ class HouseBlend extends Beverage
 
     public function __construct()
     {
-        parent::__construct('HouseBlend');
+        $this->description = 'HouseBlend';
     }
 
     public function cost(): float

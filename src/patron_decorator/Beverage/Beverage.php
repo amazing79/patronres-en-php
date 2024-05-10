@@ -7,14 +7,6 @@ abstract class Beverage
     protected $description;
 
     /**
-     * @param $description
-     */
-    public function __construct($description)
-    {
-        $this->description = $description;
-    }
-
-    /**
      * @return mixed
      */
     public function getDescription()

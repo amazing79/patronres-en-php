@@ -13,7 +13,6 @@ class Mocha extends CondimentDecorator
      */
     public function __construct(Beverage $beverage)
     {
-        parent::__construct($beverage);
         $this->beverage = $beverage;
     }
 
