@@ -2,8 +2,6 @@
 
 namespace Php\Patrones\patron_decorator\Beverage;
 
-use Php\Patrones\patron_decorator\Beverage\Beverage;
-
 class Decaf extends Beverage
 {
 
