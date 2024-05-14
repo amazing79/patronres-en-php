@@ -7,6 +7,7 @@ use Php\Patrones\patron_factory\Products\ChicagoStyle\ChicagoStyleClamPizza;
 use Php\Patrones\patron_factory\Products\ChicagoStyle\ChicagoStylePepperoniPizza;
 use Php\Patrones\patron_factory\Products\ChicagoStyle\ChicagoStyleVeggiePizza;
 use Php\Patrones\patron_factory\Products\Pizza;
+use Php\Patrones\patron_factory\Products\PizzaIngredient;
 use Php\Patrones\patron_factory\Products\Types\PizzaTypes;
 
 class ChicagoPizzaStore extends PizzaStore
@@ -27,5 +28,10 @@ class ChicagoPizzaStore extends PizzaStore
                 echo "<p>The selected Type is not Defined!</p>";
                 return null;
         }
+    }
+
+    protected function createPizzaWithIngredients($type): ?PizzaIngredient
+    {
+        return $this->createPizza($type);
     }
 }
