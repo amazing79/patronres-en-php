@@ -7,7 +7,7 @@ use Php\Patrones\patron_factory\Products\PizzaIngredient;
 
 class NYIngredientsClamPizza extends PizzaIngredient
 {
-    private $factory;
+    private PizzaIngredientFactory $factory;
 
     /**
      * @param PizzaIngredientFactory $factory
