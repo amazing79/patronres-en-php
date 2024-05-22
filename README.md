@@ -11,6 +11,7 @@ son ejemplos del libro "Head First Design Patterns" cuyos ejemplos son realizado
 - Patron State
 - Patron Decorator
 - Patron Factory
+- Patron Singleton
 
 Algunas aclaraciones
 
@@ -93,3 +94,8 @@ alguna parte de nuestro código, la creación de objetos varía mucho, la encaps
 "Uso del patron template method": Esto lo podemos ver en la clase PizzaStore, la cual propone el método orderPizza donde creamos 
 un tipo de Pizza (este se personaliza en las Fábricas) y luego usamos la plantilla "prepare, bake, cut y box" (además estas se 
 pueden redefinir en las subclases de Pizza).
+
+**Patron Singleton**
+
+En este caso, no hay mucho para aclarar en la implementación del mismo. Se hacen observaciones para el caso de Java donde pueden 
+correr varios hilos y que sin sincronizacion se puedan crear mas de una instancia. 
