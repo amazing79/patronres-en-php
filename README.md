@@ -13,7 +13,24 @@ son ejemplos del libro "Head First Design Patterns" cuyos ejemplos son realizado
 - Patron Factory
 - Patron Singleton
 
-Algunas aclaraciones
+Algunas aclaracionesq
+
+**Patron Composite**
+
+En el libro se explica el patron Composite junto con el patron Iterator. Esto es para recorrer los objetos (tipo item)  que tiene
+el objeto Compuesto. Para evitar esto, se uso la clase Array de php que ya cuenta con la implementación del patron iterator. El uso de 
+este patron es con fines practicos, ya que actualmente contamos con la estructura "foreach" que nos simplifica el recorrer arreglos.
+
+Pero cual es el sentido del Patron iterator? No tener que exponer como accedemos a los elmentos de nuestra colección (generalmente
+a traves del indice del array), pero tener en cuenta que podemos usar otras estructuras para guardar nuestros elementos (como por 
+ejemplo, hashTables)
+
+Tambien podemos ver que parte del truco del patron Composite es que tenemos que tener objetos que son hojas y otros compuestos. 
+Es muy comun de usarlo en problemas donde tenemos relaciones parte-de (o una estructura de arbol, de ahí entender de porque necesitamos
+objetos tipo hojas). 
+
+Otro patron que suma para hacer mas eficiente el patron Iterator es del uso del Iterator nulo (una especie de patron null object), el cual
+tiene comportamiento cuando no tenemos nada. 
 
 **Patron Observer**
 
