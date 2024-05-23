@@ -12,6 +12,7 @@ son ejemplos del libro "Head First Design Patterns" cuyos ejemplos son realizado
 - Patron Decorator
 - Patron Factory
 - Patron Singleton
+- Patron Template Method
 
 Algunas aclaracionesq
 
@@ -116,3 +117,21 @@ pueden redefinir en las subclases de Pizza).
 
 En este caso, no hay mucho para aclarar en la implementación del mismo. Se hacen observaciones para el caso de Java donde pueden 
 correr varios hilos y que sin sincronizacion se puedan crear mas de una instancia. 
+
+**Patron Template Method**
+
+En el ejemplo del libro, se explaya bastante con los distintos tipos de uso del patron y aclarando la idea principal: El proposito 
+de este patron es ofrecer una plantilla y que las subclases pueden modificar las partes del algoritmo a su antojo. Cual puede ser 
+el detalle? Que reemplacemos todas las partes del Algoritmo, en todas las subclases, dando una idea de un "patron strategy" mas que 
+de un "template method". Cabe aclarar que el objetivo principal del patron strategy es ofrecer distintas formas de hacer un algoritmo, 
+ es decir, propone  distintos comportamientos que pueden ser intercambiables. En cambio, el objetivo del template method es que las 
+subclases pueden elegir como implementar pasos del algoritmo. 
+
+Un ejemplo rebuscado de esto es cuando propone un algoritmo de ordenamiento (donde puede ordenar desde numeros hasta patos) usando el 
+principio de hollywood (no nos llame, nosotros lo llamaremos, que a su vez es una forma de invertir las dependencias). En el caso de 
+este principio podemos ver como la clase de alto nivel, usa las de mas bajo nivel pero teniendo control de como y cuando. Si observamos 
+el ejemplo de ordenar, la clase de mas alto nivel decide como ordenar, pero usando las implementaciones de mas bajo nivel. 
+
+Para cerrar, ademas vemos como usar un metodo gancho ("hook") para variar parte del algoritmo. Estos métodos suelen tener poca (o nula) 
+funcionalidad. Para esto, podemos ver la clase CoffeeWithHook el cual aleatoriamente agrega condimentos. Notar que en la clase padre 
+siempre se agrega condimentos y las hijas deciden si sobreescriber o no este comportamiento. 
